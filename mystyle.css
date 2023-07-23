@@ -1,0 +1,24 @@
+.custom-transition {
+    border: 3px solid transparent;
+    transition: border-color 1s ease-out;
+    border-radius: 15px;
+    padding: 4px 15px;
+}
+
+.custom-transition:hover {
+    border-color: rgb(129, 228, 226);
+    background-color: rgb(37, 80, 80);
+    color: rgb(129, 228, 226);
+}
+
+/* Add a transition for smooth shifting of content */
+#content-container {
+    transition: padding-top 1s ease-out;
+}
+
+.mycolor {
+    color: white;
+    border: 4px solid transparent;
+    border-color: rgb(129, 228, 226);
+    background-color: rgb(37, 80, 80);
+}
