@@ -16,6 +16,18 @@
     transition: padding-top 1s ease-out;
 }
 
+#contact_info,
+#contact_us {
+    height: 350px;
+    width: 350px;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact_info {
+        display: none;
+    }
+}
+
 .mycolor {
     color: white;
     border: 4px solid transparent;
