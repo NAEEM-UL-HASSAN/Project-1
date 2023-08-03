@@ -196,7 +196,8 @@
     <!-- Projects Ends here -->
 
     <!-- Contact Me Starts here -->
-    <div id="contact">
+
+     <div id="contact">
         <center>
             <div
                 class=" text-center text-slate-200 font-bold mt-14 text-2xl md:text-6xl font-serif bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-2xl w-1/3 md:w-1/2 p-2 md:p-4 animate-pulse">
@@ -204,12 +205,21 @@
             </div>
         </center>
 
-        <div class="mt-10  grid place-items-center">
-            <div class="shadow-md flex flex-row flex-wrap mx-5 justify-center">
-                <div
-                    class="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-8 hover:scale-y-110  transition sm:block rounded-sm">
+        
+        <div class="h-screen w-full grid place-items-center">
+            <div class="bg-slate-300 rounded-md shadow-md flex flex-row">
+                <!-- contact information form -->
+                <div class="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-8 md:hover:scale-y-110 rounded-md transition md:block"
+                    id="contact_info">
                     <div class="flex justify-between">
                         <h2 class="text-white text-xl">Contact Information</h2>
+                        <h2 class="text-white text-xs flex flex-row md:hidden cursor-pointer" id="swtich_to_contact_us">
+                            Contact Us <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg></h2>
                     </div>
                     <div class="mt-6 flex flex-row">
                         <div>
@@ -250,7 +260,7 @@
                         </div>
                         <div>
                             <h2 class="text-slate-200 text-xs">Phone :</h2>
-                            <p class="text-white text-xs">03254280903</p>
+                            <p class="text-white text-xs">0325 4280903</p>
                         </div>
                     </div>
 
@@ -272,12 +282,21 @@
 
                 </div>
 
-                <div class="bg-gray-400  md:px-6 px-[162px] py-8 block rounded-sm">
+
+                <!-- get in touch form -->
+                <div class="px-6 py-8" id="contact_us">
                     <div class="flex justify-between">
-                        <h2 class="text-slate-800 text-xl w-full">Get In Touch</h2>
+                        <h2 class="text-blue-800 text-xl">Get In Touch</h2>
+                        <h2 class="text-blue-800 text-xs flex flex-row md:hidden cursor-pointer"
+                            id="swtich_to_contact_info">Contact Info <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg></h2>
                     </div>
                     <input type="text" placeholder="Enter Your Name"
-                        class="w-full  text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
+                        class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
                     <input type="text" placeholder="Enter Your Email"
                         class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
                     <input type="text" placeholder="Subject"
@@ -285,12 +304,13 @@
                     <textarea placeholder="Enter your Message here"
                         class="w-full text-xs px-3 py-2 h-20 my-2 outline-none rounded-md border focus:shadow-sm resize-none"></textarea><br>
                     <input type="submit" value="Send"
-                        class="bg-slate-800 px-4 py-2 rounded-md text-white text-xs cursor-pointer hover:shadow-md">
+                        class="bg-blue-800 px-4 py-2 rounded-md text-white text-xs cursor-pointer hover:shadow-md">
                 </div>
+
             </div>
         </div>
     </div>
-
+    
     <!-- Contact Me Ends here -->
 
     <!-- Footer Starts Here -->
@@ -363,6 +383,21 @@
         const textElement = document.getElementById("typing-text");
         const typingSpeed = 100; 
         typeNextSentence(textElement);
+
+        let contact_info = document.querySelector('#contact_info');
+        let contact_us = document.querySelector('#contact_us');
+        let swtich_to_contact_us = document.querySelector('#swtich_to_contact_us');
+        let swtich_to_contact_info = document.querySelector('#swtich_to_contact_info');
+
+        swtich_to_contact_us.addEventListener("click", () => {
+            contact_info.style.display = 'none';
+            contact_us.style.display = 'block';
+        });
+
+        swtich_to_contact_info.addEventListener("click", () => {
+            contact_info.style.display = 'block';
+            contact_us.style.display = 'none';
+        });
     </script>
 
 </body>
