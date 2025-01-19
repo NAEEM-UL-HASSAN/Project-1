@@ -1,403 +1,516 @@
 <!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mystyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mystyle.css" />
     <title>MY Portfolio</title>
-</head>
+  </head>
 
-<body class="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950">
+  <body class="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950">
     <!-- Home Start here -->
     <div id="home"></div>
-    <nav class="z-10 font-sans font-semibold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900  py-6 ring-2
-    ring-emerald-100 flex justify-between items-center sticky top-0">
-        <div>
-            <img class="ml-1 h-14 w-20  md:h-12 md:w-28 rounded-full" src="logo.jpeg" alt="">
-        </div>
-        <ul class="text-slate-50 md:text-lg md:flex hidden">
-            <li class="custom-transition"><a href="#home">Home</a></li>
-            <li class="custom-transition"><a href="#about">About Me</a></li>
-            <li class="custom-transition"><a href="#project">My Projects</a></li>
-            <li class="custom-transition"><a href="#contact">Contact Me</a></li>
-        </ul>
-        <div id="mobile-menu"
-            class="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 overflow-hidden ring-2 ring-emerald-100 fixed left-0 right-0 top-0 w-full p-3 space-y-2  rounded-b-lg shadow-md  md:hidden hidden mobile-menu-transition">
-            <a href="#home" class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse">
-                Home
-            </a>
-            <a href="#about" class="block px-4 py-2 text-white hover:bg-gray-600 rounded  w-48 animate-pulse">
-                About Me
-            </a>
-            <a href="#project" class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse">
-                My Projects
-            </a>
-            <a href="#contact" class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48  animate-pulse">
-                Contact Me
-            </a>
-            <a href="#signup/signin"
-                class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse">SignUp/SignIn
-            </a>
-        </div>
-        <div id="menu-toggle"
-            class="p-2 mr-2 right-3 space-y-2 bg-gray-500 rounded shadow md:hidden cursor-pointer animate-pulse">
-            <div class="hamburger-line w-11 h-1.5 bg-white my-1.5 rounded"></div>
-            <div class="hamburger-line w-11 h-1.5 bg-white my-1.5 rounded"></div>
-            <div class="hamburger-line w-11 h-1.5 bg-white my-1.5 rounded"></div>
-        </div>
+    <nav
+      class="z-10 font-sans font-semibold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 py-6 ring-2 ring-emerald-100 flex justify-between items-center sticky top-0"
+    >
+      <div>
+        <img
+          class="ml-1 h-14 w-20 md:h-12 md:w-28 rounded-full"
+          src="logo.jpeg"
+          alt=""
+        />
+      </div>
+      <ul class="text-slate-50 md:text-lg md:flex hidden">
+        <li class="custom-transition"><a href="#home">Home</a></li>
+        <li class="custom-transition"><a href="#about">About Me</a></li>
+        <li class="custom-transition"><a href="#project">My Projects</a></li>
+        <li class="custom-transition"><a href="#contact">Contact Me</a></li>
+      </ul>
+      <div
+        id="mobile-menu"
+        class="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 overflow-hidden ring-2 ring-emerald-100 fixed left-0 right-0 top-0 w-full p-3 space-y-2 rounded-b-lg shadow-md md:hidden hidden mobile-menu-transition"
+      >
+        <a
+          href="#home"
+          class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse"
+        >
+          About Me
+        </a>
+        <a
+          href="#project"
+          class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse"
+        >
+          My Projects
+        </a>
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse"
+        >
+          Contact Me
+        </a>
+        <a
+          href="#signup/signin"
+          class="block px-4 py-2 text-white hover:bg-gray-600 rounded w-48 animate-pulse"
+          >SignUp/SignIn
+        </a>
+      </div>
+      <div
+        id="menu-toggle"
+        class="p-2 mr-2 right-3 space-y-2 bg-gray-500 rounded shadow md:hidden cursor-pointer animate-pulse"
+      >
+        <div class="hamburger-line w-11 h-1.5 bg-white my-1.5 rounded"></div>
+        <div class="hamburger-line w-11 h-1.5 bg-white my-1.5 rounded"></div>
+        <div class="hamburger-line w-11 h-1.5 bg-white my-1.5 rounded"></div>
+      </div>
 
-        <button type="button" class="mr-1 text-slate-50 md:text-lg custom-transition hidden md:block">
-            SignUp/SignIn
-        </button>
+      <div></div>
     </nav>
-    <div id="content-container" class=" md:pt-0 mx-3">
-        <header class="md:flex">
-            <img class="mt-7 w-full h-full rounded-3xl  md:ml-3" src="mypic1.jpeg" alt="">
-            <div class=" flex justify-center text-center items-center mt-8 md:mt-0.5 w-full h-40">
-                <span id="typing-text"
-                    class="font-serif text-4xl p-3 mx-3 text-white rounded bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 border-4 border-slate-400">
-                    I am
-                </span>
-            </div>
-        </header>
-
+    <div id="content-container" class="md:pt-0 mx-3">
+      <header class="md:flex">
+        <img
+          class="mt-7 w-full h-96 rounded-3xl md:ml-3"
+          src="my-pic.jpg"
+          alt=""
+        />
+        <div
+          class="flex justify-center text-center items-center mt-8 md:mt-0.5 w-full h-40"
+        >
+          <span
+            id="typing-text"
+            class="font-serif text-4xl p-3 mx-3 text-white rounded bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 border-4 border-slate-400"
+          >
+            I am
+          </span>
+        </div>
+      </header>
     </div>
     <!-- Home Ends here -->
 
     <!-- About Start Here -->
     <div id="about">
-        <center>
-            <div
-                class=" text-center text-slate-200 mt-14 font-bold text-2xl md:text-6xl font-serif bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-2xl w-1/3 md:w-96 p-2 md:p-4 animate-pulse">
-                <span class="animate-pulse">About Me</span>
-            </div>
-            <div class=" text-center text-white mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 p-2 md:p-4">
-                <span class="text-4xl font-bold">I am Naeem Ul Hassan.</span><br>
-                I am studying BS-CS at University of Engineering and Technology Lahore. Currently, I am doing a MERN
-                Stack internship at Apex Space.My aim to establish myself as a remarkable professional in a stimulating
-                and everchanging setting,where I can foster and enhance my abilities to the fullest. My goal is to
-                combine my technical expertise with hands-on experience, enabling me to thrive and excel in my chosen
-                career path.
-            </div>
-        </center>
+      <center>
+        <div
+          class="text-center text-slate-200 mt-14 font-bold text-2xl md:text-6xl font-serif bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-2xl w-1/3 md:w-96 p-2 md:p-4 animate-pulse"
+        >
+          <span class="animate-pulse">About Me</span>
+        </div>
+        <div
+          class="text-center text-white mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 p-2 md:p-4"
+        >
+          <span class="text-4xl font-bold">I am Naeem Ul Hassan.</span><br />
+          I am studying BS-CS at University of Engineering and Technology
+          Lahore. Currently, I am doing a MERN Stack internship at Apex Space.My
+          aim to establish myself as a remarkable professional in a stimulating
+          and everchanging setting,where I can foster and enhance my abilities
+          to the fullest. My goal is to combine my technical expertise with
+          hands-on experience, enabling me to thrive and excel in my chosen
+          career path.
+        </div>
+      </center>
     </div>
     <!-- About Ends Here -->
 
     <!-- Projects Starts here -->
     <div id="project">
-        <center>
-            <div
-                class=" text-center text-slate-200 font-bold mt-14 text-2xl md:text-6xl font-serif bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-2xl w-1/3 md:w-1/2 p-2 md:p-4 animate-pulse">
-                <span class="animate-pulse">My Projects</span>
-            </div>
-        </center>
-        <div class="flex justify-evenly flex-wrap">
-            <div
-                class=" mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200  p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-1.jpeg" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Bus Managment System in JAVA</span><br>
-                    Data structures and algorithms principles to create a user- friendly interface and seamless user
-                    experience.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-2.png" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Digital Bazar in JAVA</span><br>
-                    Created an online marketplace using object-oriented programming in Java to create Digital Bazar.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-3.jpeg" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Property Managment System</span><br>
-                    Developed a property management system to manage properties using Java and MySQL.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-4.jpeg" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Online Meal</span><br>
-                    Welcome to my online meal website, where culinary delights meet cutting-edge technology through the
-                    use of HTML5 and CSS3.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-5.jpeg" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Make Your Home</span><br>
-                    Welcome to my home website, where I combine the art of modern technology with HTML5 and CSS3 to
-                    create a seamless browsing experience.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-6.jpeg" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Welcome to GYM</span><br>
-                    Welcome to my gym website, where the art of modern technology comes together with HTML and CSS to
-                    offer you a seamless fitness journey.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-7.png" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Digital Clock</span><br>
-                    Welcome to my website, where I present a state-of-the-art digital clock that showcases the seamless
-                    integration of HTML5, CSS3, and JavaScript.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-8.jpeg" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">To-do List</span><br>
-                    Welcome to my website, where I proudly introduce a cutting-edge to-do list with a seamless
-                    integration of HTML5, CSS3, and JavaScript.
-                </div>
-            </div>
-            <div
-                class="mycolor transition ease-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4">
-                <div>
-                    <img class="h-14 w-full rounded-full" src="p-9.jpeg" alt="">
-                </div>
-                <div class="text-center">
-                    <span class="text-4xl font-bold">Hacker Man</span><br>
-                    I have meticulously crafted an immersive website that skillfully showcases captivating hacking
-                    effects using the potent combination of HTML5, CSS3, and JavaScript.
-                </div>
-            </div>
+      <center>
+        <div
+          class="text-center text-slate-200 font-bold mt-14 text-2xl md:text-6xl font-serif bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-2xl w-1/3 md:w-1/2 p-2 md:p-4 animate-pulse"
+        >
+          <span class="animate-pulse">My Projects</span>
         </div>
+      </center>
+      <div class="flex justify-evenly flex-wrap">
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-1.jpeg" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Bus Managment System in JAVA</span
+            ><br />
+            Data structures and algorithms principles to create a user- friendly
+            interface and seamless user experience.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-2.png" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Digital Bazar in JAVA</span><br />
+            Created an online marketplace using object-oriented programming in
+            Java to create Digital Bazar.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-3.jpeg" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Property Managment System</span
+            ><br />
+            Developed a property management system to manage properties using
+            Java and MySQL.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-4.jpeg" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Online Meal</span><br />
+            Welcome to my online meal website, where culinary delights meet
+            cutting-edge technology through the use of HTML5 and CSS3.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-5.jpeg" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Make Your Home</span><br />
+            Welcome to my home website, where I combine the art of modern
+            technology with HTML5 and CSS3 to create a seamless browsing
+            experience.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-6.jpeg" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Welcome to GYM</span><br />
+            Welcome to my gym website, where the art of modern technology comes
+            together with HTML and CSS to offer you a seamless fitness journey.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-7.png" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Digital Clock</span><br />
+            Welcome to my website, where I present a state-of-the-art digital
+            clock that showcases the seamless integration of HTML5, CSS3, and
+            JavaScript.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-8.jpeg" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">To-do List</span><br />
+            Welcome to my website, where I proudly introduce a cutting-edge
+            to-do list with a seamless integration of HTML5, CSS3, and
+            JavaScript.
+          </div>
+        </div>
+        <div
+          class="mycolor transition ease-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 duration-1000 hover:text-slate-200 p-6 max-w-sm mx-3 flex flex-col justify-center items-center text-center mt-14 text-2xl font-sans bg-gray-500 rounded-2xl w-8/12 md:p-4"
+        >
+          <div>
+            <img class="h-14 w-full rounded-full" src="p-9.jpeg" alt="" />
+          </div>
+          <div class="text-center">
+            <span class="text-4xl font-bold">Hacker Man</span><br />
+            I have meticulously crafted an immersive website that skillfully
+            showcases captivating hacking effects using the potent combination
+            of HTML5, CSS3, and JavaScript.
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Projects Ends here -->
 
     <!-- Contact Me Starts here -->
 
-     <div id="contact">
-        <center>
-            <div
-                class=" text-center text-slate-200 font-bold mt-14 text-2xl md:text-6xl font-serif bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-2xl w-1/3 md:w-1/2 p-2 md:p-4 animate-pulse">
-                <span class="animate-pulse">Contact Me</span>
-            </div>
-        </center>
-
-        
-        <div class="h-screen w-full grid place-items-center">
-            <div class="bg-slate-300 rounded-md shadow-md flex flex-row">
-                <!-- contact information form -->
-                <div class="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-8 md:hover:scale-y-110 rounded-md transition md:block"
-                    id="contact_info">
-                    <div class="flex justify-between">
-                        <h2 class="text-white text-xl">Contact Information</h2>
-                        <h2 class="text-white text-xs flex flex-row md:hidden cursor-pointer" id="swtich_to_contact_us">
-                            Contact Us <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                    clip-rule="evenodd" />
-                            </svg></h2>
-                    </div>
-                    <div class="mt-6 flex flex-row">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-slate-200 text-xs">Name :</h2>
-                            <p class="text-white text-xs">Naeem Ul Hassan</p>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex flex-row">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-slate-200 text-xs">Email :</h2>
-                            <p class="text-white text-xs">naeemhashmi870@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex flex-row">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-slate-200 text-xs">Phone :</h2>
-                            <p class="text-white text-xs">0325 4280903</p>
-                        </div>
-                    </div>
-
-                    <div class="mt-5 flex flex-row">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-slate-200 text-xs">Address :</h2>
-                            <p class="text-white text-xs">House# E53/3 Street#7 PIR Colony Walton Road Lahore Cantt.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- get in touch form -->
-                <div class="px-6 py-8" id="contact_us">
-                    <div class="flex justify-between">
-                        <h2 class="text-blue-800 text-xl">Get In Touch</h2>
-                        <h2 class="text-blue-800 text-xs flex flex-row md:hidden cursor-pointer"
-                            id="swtich_to_contact_info">Contact Info <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                    clip-rule="evenodd" />
-                            </svg></h2>
-                    </div>
-                    <input type="text" placeholder="Enter Your Name"
-                        class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
-                    <input type="text" placeholder="Enter Your Email"
-                        class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
-                    <input type="text" placeholder="Subject"
-                        class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
-                    <textarea placeholder="Enter your Message here"
-                        class="w-full text-xs px-3 py-2 h-20 my-2 outline-none rounded-md border focus:shadow-sm resize-none"></textarea><br>
-                    <input type="submit" value="Send"
-                        class="bg-blue-800 px-4 py-2 rounded-md text-white text-xs cursor-pointer hover:shadow-md">
-                </div>
-
-            </div>
+    <div id="contact">
+      <center>
+        <div
+          class="text-center text-slate-200 font-bold mt-14 text-2xl md:text-6xl font-serif bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-2xl w-1/3 md:w-1/2 p-2 md:p-4 animate-pulse"
+        >
+          <span class="animate-pulse">Contact Me</span>
         </div>
+      </center>
+
+      <div class="h-screen w-full grid place-items-center">
+        <div class="bg-slate-300 rounded-md shadow-md flex flex-row">
+          <!-- contact information form -->
+          <div
+            class="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-8 md:hover:scale-y-110 rounded-md transition md:block"
+            id="contact_info"
+          >
+            <div class="flex justify-between">
+              <h2 class="text-white text-xl">Contact Information</h2>
+              <h2
+                class="text-white text-xs flex flex-row md:hidden cursor-pointer"
+                id="swtich_to_contact_us"
+              >
+                Contact Us
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ml-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </h2>
+            </div>
+            <div class="mt-6 flex flex-row">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-slate-200 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-slate-200 text-xs">Name :</h2>
+                <p class="text-white text-xs">Naeem Ul Hassan</p>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-row">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-slate-200 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-slate-200 text-xs">Email :</h2>
+                <p class="text-white text-xs">naeemhashmi870@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-row">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-slate-200 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-slate-200 text-xs">Phone :</h2>
+                <p class="text-white text-xs">0325 4280903</p>
+              </div>
+            </div>
+
+            <div class="mt-5 flex flex-row">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-slate-200 mr-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h2 class="text-slate-200 text-xs">Address :</h2>
+                <p class="text-white text-xs">
+                  House# E53/3 Street#7 PIR Colony Walton Road Lahore Cantt.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- get in touch form -->
+          <div class="px-6 py-8" id="contact_us">
+            <div class="flex justify-between">
+              <h2 class="text-blue-800 text-xl">Get In Touch</h2>
+              <h2
+                class="text-blue-800 text-xs flex flex-row md:hidden cursor-pointer"
+                id="swtich_to_contact_info"
+              >
+                Contact Info
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ml-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </h2>
+            </div>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"
+            /><br />
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"
+            /><br />
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"
+            /><br />
+            <textarea
+              placeholder="Enter your Message here"
+              class="w-full text-xs px-3 py-2 h-20 my-2 outline-none rounded-md border focus:shadow-sm resize-none"
+            ></textarea
+            ><br />
+            <input
+              type="submit"
+              value="Send"
+              class="bg-blue-800 px-4 py-2 rounded-md text-white text-xs cursor-pointer hover:shadow-md"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Contact Me Ends here -->
 
     <!-- Footer Starts Here -->
     <footer>
-        <div class="font-sans font-semibold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900  p-8 ring-2
-        ring-emerald-100 mt-8 text-white text-center">
-            Copyright &copy; www.My Portfolio.com. All rights reserved!
-        </div>
+      <div
+        class="font-sans font-semibold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-8 ring-2 ring-emerald-100 mt-8 text-white text-center"
+      >
+        Copyright &copy; www.My Portfolio.com. All rights reserved!
+      </div>
     </footer>
     <!-- Footer Ends Here -->
 
-
     <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuToggle = document.getElementById('menu-toggle');
-        const contentContainer = document.getElementById('content-container');
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuToggle = document.getElementById("menu-toggle");
+      const contentContainer = document.getElementById("content-container");
 
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            menuToggle.classList.toggle('hamburger-animate');
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuToggle.classList.toggle("hamburger-animate");
 
-            if (!mobileMenu.classList.contains('hidden')) {
-                contentContainer.style.paddingTop = '150px';
-            } else {
-                contentContainer.style.paddingTop = '0';
-            }
-        });
+        if (!mobileMenu.classList.contains("hidden")) {
+          contentContainer.style.paddingTop = "150px";
+        } else {
+          contentContainer.style.paddingTop = "0";
+        }
+      });
 
-        const sentences = [
+      const sentences = [
+        " BS-CS Student.",
+        " Frontend Developer.",
+        " Programmer.",
+      ];
+      const initialText = "I am a";
+      function typeWriter(textElement, text, speed) {
+        let charIndex = 0;
+        const intervalId = setInterval(() => {
+          if (charIndex < text.length) {
+            textElement.textContent += text.charAt(charIndex);
+            charIndex++;
+          } else if (charIndex === text.length) {
+            clearInterval(intervalId);
+            setTimeout(() => {
+              const deleteIntervalId = setInterval(() => {
+                const currentText = textElement.textContent;
+                if (currentText.length > initialText.length) {
+                  textElement.textContent = currentText.slice(0, -1);
+                } else {
+                  clearInterval(deleteIntervalId);
+                  typeNextSentence(textElement);
+                }
+              }, speed);
+            }, 2000);
+          }
+        }, speed);
+      }
+      function typeNextSentence(textElement) {
+        const nextSentence = sentences.shift();
+
+        if (!nextSentence) {
+          sentences.push(
             " BS-CS Student.",
             " Frontend Developer.",
-            " Programmer.",
-        ];
-        const initialText = "I am a";
-        function typeWriter(textElement, text, speed) {
-            let charIndex = 0;
-            const intervalId = setInterval(() => {
-                if (charIndex < text.length) {
-                    textElement.textContent += text.charAt(charIndex);
-                    charIndex++;
-                } else if (charIndex === text.length) {
-                    clearInterval(intervalId);
-                    setTimeout(() => {
-                        const deleteIntervalId = setInterval(() => {
-                            const currentText = textElement.textContent;
-                            if (currentText.length > initialText.length) {
-                                textElement.textContent = currentText.slice(0, -1);
-                            } else {
-                                clearInterval(deleteIntervalId);
-                                typeNextSentence(textElement);
-                            }
-                        }, speed);
-                    }, 2000);
-                }
-            }, speed);
+            " Programmer."
+          );
         }
-        function typeNextSentence(textElement) {
-            const nextSentence = sentences.shift();
+        textElement.textContent = initialText;
+        typeWriter(textElement, nextSentence || sentences[0], typingSpeed);
+      }
+      const textElement = document.getElementById("typing-text");
+      const typingSpeed = 100;
+      typeNextSentence(textElement);
 
-            if (!nextSentence) {
-                sentences.push(
-                    " BS-CS Student.",
-                    " Frontend Developer.",
-                    " Programmer."
-                );
-            }
-            textElement.textContent = initialText;
-            typeWriter(textElement, nextSentence || sentences[0], typingSpeed);
-        }
-        const textElement = document.getElementById("typing-text");
-        const typingSpeed = 100; 
-        typeNextSentence(textElement);
+      let contact_info = document.querySelector("#contact_info");
+      let contact_us = document.querySelector("#contact_us");
+      let swtich_to_contact_us = document.querySelector(
+        "#swtich_to_contact_us"
+      );
+      let swtich_to_contact_info = document.querySelector(
+        "#swtich_to_contact_info"
+      );
 
-        let contact_info = document.querySelector('#contact_info');
-        let contact_us = document.querySelector('#contact_us');
-        let swtich_to_contact_us = document.querySelector('#swtich_to_contact_us');
-        let swtich_to_contact_info = document.querySelector('#swtich_to_contact_info');
+      swtich_to_contact_us.addEventListener("click", () => {
+        contact_info.style.display = "none";
+        contact_us.style.display = "block";
+      });
 
-        swtich_to_contact_us.addEventListener("click", () => {
-            contact_info.style.display = 'none';
-            contact_us.style.display = 'block';
-        });
-
-        swtich_to_contact_info.addEventListener("click", () => {
-            contact_info.style.display = 'block';
-            contact_us.style.display = 'none';
-        });
+      swtich_to_contact_info.addEventListener("click", () => {
+        contact_info.style.display = "block";
+        contact_us.style.display = "none";
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
